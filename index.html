@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content= "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d2a49e01b8.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="favicons/favicon2.jpeg" type="image/x-icon">
+</head> 
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="images/Resume.pdf">Resume</a></li>
+                <li><a href="https://www.linkedin.com/in/berke-derin-berktay/">LinkedIn</a></li>
+                <li><a href="https://github.com/brdrbr">Github</a></li>
+               
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer & Data Scientist</p>
+            <h1>Hi, I'm Berke <span>Derin</span> Berktay</h1>
+        </div>
+    </div>
+</div>
+<!-------------about------------- -->
+<di id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Emerging software engineer and data scientist with roots 
+                    in industrial engineering and computer engineering. 
+                    Analyzer. Data interpreter. Experienced in preparing and 
+                    interpreting data from a management engineering perspective. 
+                    Driven by the power of data to shape and transform society.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Experience</p>
+                    <p class="tab-links" onclick="opentab('experience')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                            <li><span>Researcher, Koc University, Turkey, 2022-2023</span><br>•	Researched disaster response management operations research models 
+                                and explored methods to incorporate quantum integer programming.
+                                </li>
+                            <li><span>Teaching Assistant, Koc University,Turkey, 2020-2023</span><br>•	Held lectures for the Introduction to Programming with Python Course.
+                                </li>
+                            <li><span>Software Engineering Intern, eKare Inc., United States, 2022</span><br>•	Created an OpenCV C software for wound detection during surgical operations 
+                                at US hospitals.<br>
+                                •	Assisted with front-end and back-end development for the company website.                            
+                                </li>
+                            <li><span>Data Science Intern, Arcelik, Turkey, 2022</span><br>•	Contributed to data visualization and manipulation projects on Qlik.<br>
+                                •	Designed and implemented a predictive model with feature engineering.<br>     
+                                •	Presented findings from the model, leading to a 20% customer churn decrease.                       
+                                </li>
+                            <li><span>Software Engineering Intern, Xtinge Inc., Turkey, 2022</span><br>•	Assisted with the design of augmented reality-incorporated mobile games 
+                                for both Android and IOS on Unity 3D.                            
+                                </li>
+                            <li><span>Software Engineering Club Board Member, Koc University, Turkey, 2021-2022</span><br>•	Held weekly lectures on Django-React front-end and back-end development.
+                                </li>
+                            <li><span>Software Engineering Intern , Koc University, Turkey, 2022-2023</span><br>•	Contributed to projects with Jira, Jenkins, and financial data and systems, 
+                                such as trading platforms, risk management, and payment processing systems.                            
+                                </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                            Python<br> 
+                            R <br> 
+                            SQL<br> 
+                            JavaScript<br> 
+                            C/C++<br>
+                            C#<br> 
+                            Flutter<br> 
+                            React<br> 
+                            Assembly<br> 
+                            Django<br> 
+                            Unity3D<br> 
+                            Qlik<br> 
+                            LaTeX<br> 
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Master of Information (MI) 2023-2025(expected)</span><br>Program: Human-Centred Data Science<br>
+                            Faculty of Information, University of Toronto<br>
+                            GPA: 3.93
+                            </li>
+                        <li><span>Bachelor of Science (BSc) 2019-2023</span><br>Major: Computer Engineering<br>
+                            Faculty of Engineering, Koc University<br>
+                            GPA: 3.21
+                        </li>
+                        <li><span>Bachelor of Science (BSc) 2019-2023</span><br>Major: Industrial Engineering<br>
+                            Faculty of Engineering, Koc University<br>
+                            GPA: 3.21
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------services------- -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Sample Work in Data Science</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Prediction of Employee Promotion - Binary Classification 🏆</h3>
+                    <p>Created a model that can classify an employee promotion with (89.49% Accuracy).
+
+                        Used two datasets: PromosSample.csv as historical data with 54808 examples and test.csv as current data 23490 examples using pandas library in python.
+                        
+                        Applied Logistic Regression, Support Vector Classifier, Random Forest Classifier, Bernoulli Naive Bayes, and KNeighborsClassifier and optimized using GridSearchCV to find the best model.
+                    </p>
+                    <a href="https://github.com/brdrbr/prediction_of_employee_prediction"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Financial Sentiment Analysis 📈</h3>
+                    <p>Created a model that can classify a Financial sentence as a Positive, Negative, or Neutral sentiment with (66% Accuracy) to detect polarity within the text.
+
+                        Pulled over 5842 examples from Kaggle using pandas and opendatasets libraries in python.
+                        
+                        Applied Logistic Regression, Support Vector Classifier, Random Forest Classifier, Bernoulli Naive Bayes, and KNeighborsClassifier and optimized using GridSearchCV to find the best model.
+                    </p>
+                    <a href="https://github.com/brdrbr/financial_sentiment_analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Restaurant Review - Sentiment Analysis 🌮</h3>
+                    <p>Created a model that can classify a Restaurant Review as a Positive or a Negative review with (77% Accuracy) to detect polarity within the text.
+
+                        Pulled over 1000 examples from Kaggle using pandas and opendatasets libraries in python.
+                        
+                        Applied Logistic Regression, Support Vector Classifier, Random Forest Classifier, Bernoulli Naive Bayes, and KNeighborsClassifier and optimized using GridSearchCV to find the best model.
+                    </p>
+                    <a href="https://github.com/brdrbr/restaurant_review_analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png" alt="">
+                <div class="layer">
+                    <h3>Predict Book Ratings 📚</h3>
+                    <p>Created a tool that can estimate the book ratings (Mean Absolute Error - 0.21) to help bibliophiles to predict the average book ratings when it comes to picking the next book to read.
+
+                        Pulled over 11123 books from Kaggle using pandas and opendatasets libraries in python.
+                        
+                        Applied Linear Regression and Random Forest Regression and optimized using RandomGridSearchCV to find the best model.
+                        
+                        Built a client-facing API using flask.
+                    </p>
+                    <a href="https://github.com/brdrbr/book_ratings"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://github.com/brdrbr", class="btn">See more</a>
+    </div>
+</div>
+<!-- ---------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Sample Work in Software Engineering</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-5.png" alt="">
+                <div class="layer">
+                    <h4>The Escape Game 🏃</h4>
+                    <p>Created a game that utilized the concepts of 
+                        Requirements analysis and capture. Use cases, Domain models and UML,
+                        GRASP: Polymorphism, Pure Fabrication, Indirection, Protected Variation. GoF Design Patterns.
+                        GoF Design Patterns: Adapter, Factory, Singleton
+                        GoF Strategy, Composite, Facade, Observer.
+                        Concurrent/Multithreaded Programming, Activity Diagrams, State Diagrams.
+                        Data abstraction, Type hierarchies, polymorphic abstraction, Specification.
+                        Specification, testing and verification, Unit testing, Refactoring.
+                    </p>
+                    <a href="https://github.com/brdrbr/Escape-From-School-Game"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-6.png" alt="">
+                <div class="layer">
+                    <h4>Medical Wound Analysis 🔬</h4>
+                    <p>Created a complex wound detection ML model. The concepts used are:
+                        region-based segmentation, edge-based segmentation, thresholding, clustering, texture analysis, distance transforms, 
+                        mathematical morphology, segmentation, 
+                        feature extraction, morphological features, textural features, structural features,classifierS,
+                        fully CNNs for semantic segmentation in biopsy images, 3D multi-task fully CNNs,
+                        generative adversarial networks for image synthesis, reconstruction and artifact correction in MR images
+                    </p>
+                    <a href="https://github.com/brdrbr/Medical-Image-Analysis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-7.png" alt="">
+                <div class="layer">
+                    <h3>Cache Memory Simulator ⚙️</h3>
+                    <p>Implemented a cache simulator using the LRU replacement policy, and the total number of hits, misses, evictions, and dirty bytes in the cache.
+                    </p>
+                    <a href="https://github.com/brdrbr/Cache-Memory-Simulator"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-8.png" alt="">
+                <div class="layer">
+                    <h3>Hash Table Simulator #️⃣</h3>
+                    <p>Implemented a Hash Table in Java from scratch.
+                    </p>
+                    <a href="https://github.com/brdrbr/Hash-Table-Simulator"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="https://github.com/brdrbr", class="btn">See more</a>
+    </div>
+</div>
+<!-----contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> derinberke@hotmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +1-647-471-3502</p>
+                <div class="social-icons">
+                    <a href=https://github.com/brdrbr><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/berke-derin-berktay/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_derinberke/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright ® Berke Derin Berktay</p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");       
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");       
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyMDb8NtBUeCi-6TtGMmkaOw42vxBtgakIJ86oxOGancZvtD9wjVLu_Im27CQl7_sNYig/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body> 
+</html>
